@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Butterscotch;
+    src: url("../media/fonts/Butterscotch.ttf");
+}
+
+@font-face {
+    font-family: Handmade;
+    src: url("../media/fonts/HandmadeFont.otf");
+}
+
+@font-face {
+    font-family: NotoColorEmoji;
+    src: url("../media/fonts/NotoColorEmoji-Regular.ttf");
+}
+
 .fi-gb-eng {
     position: relative;
     background-image: url("../media/flags/us.svg");
@@ -31,8 +46,8 @@ html {
 }
 
 body {
-    background-color: aquamarine;
-    color: #F2EFEA;
+    background-color: #575757;;
+    color: white;
     padding-top: 3em;
     transition: background-color 0.5s ease-in-out;
 }
@@ -153,22 +168,79 @@ header nav a:active {
     color: #8E44AD;
 }
 
+main {
+    position: relative;
+    margin: 2%;
+    margin-top: 8%;
+}
+
+main h3{
+    font-family: Butterscotch;
+    text-shadow: 2px 1.3px #000000;
+    font-size: 38px;
+    text-align: center;
+}
+
+main aside article section label h4{
+    position: relative;
+    font-weight: 100;
+    font-family: Butterscotch;
+    text-decoration: underline;
+    text-shadow: 2px 1.3px #000000;
+}
+
+main aside article section label p{
+    position: relative;
+    font-family: Handmade;
+    font-size: 24px;
+    text-shadow: 2px 1.3px #000000;
+}
+
+aside {
+    display: flex;
+    justify-content: space-around; /* Adjust this property as needed */
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    border: 3px solid white;
+    transition: all 1s ease-in-out;
+}
+
+img:hover {
+    max-width: 100%;
+    height: 350px;
+    height: auto;
+    box-shadow: 4px 4px 5px 5px purple;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 97.6%;
-    background: #2E4053;
-    padding: 1em;
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    height: 6em;
+    width: 100%;
+    background-color: #2E4053;
     text-align: center;
     color: white;
     border-top: 2px solid white;
 }
 
 footer span {
+    position: relative;
     font-variant: small-caps;
 }
 
 footer p {
+    position: relative;
     margin: 0;
     text-decoration: underline;
     text-align: left;
@@ -181,6 +253,7 @@ footer menu {
 }
 
 footer a p {
+    position: relative;
     float: left;
     text-decoration: none;
     font-size: 16px;
@@ -193,12 +266,14 @@ footer a p:hover {
 }
 
 footer menu li {
+    position: relative;
     margin: 1%;
     list-style-type: none;
     font-size: 16px;
 }
 
 footer menu a {
+    position: relative;
     color: white;
     text-decoration: none;
     transition: color 0.5s ease-in-out;
@@ -213,6 +288,7 @@ footer menu li p {
 }
 
 footer button {
+    position: relative;
     margin-top: 3%;
     margin-right: 4%;
     float: right;
